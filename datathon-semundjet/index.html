@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Graphs from CSVs</title>
+		<title>Datathon</title>
 		<link rel='stylesheet' href='stylesheets/style.css' />
 		<link rel='stylesheet' href='stylesheets/bootstrap.min.css' />
 		<link rel='stylesheet' href='stylesheets/font-awesome.min.css' />
+		<!-- Custom CSS -->
+    <link href="stylesheets/one-page-wonder.css" rel="stylesheet">
 
 		<!-- Load c3.css -->
 		<link href="stylesheets/c3.css" rel="stylesheet" type="text/css">
@@ -17,11 +19,114 @@
 		<script src="javascripts/papaparse.min.js"></script>
   	</head>
   	<body>
-  		<h1>Semundjet ne Kosove</h1>
-    	<div class="container">
-    		<div id="chart"></div>
-    	</div>
 
-		<script src="javascripts/create-graph.js"></script>
+			    <!-- Navigation -->
+			    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			        <div class="container">
+			            <!-- Brand and toggle get grouped for better mobile display -->
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			                    <span class="sr-only">Toggle navigation</span>
+			                    <span class="icon-bar"></span>
+			                    <span class="icon-bar"></span>
+			                    <span class="icon-bar"></span>
+			                </button>
+			                <a class="navbar-brand" href="#">DataVIZ</a>
+			            </div>
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			                <ul class="nav navbar-nav">
+			                    <li>
+			                        <a href="#about">Numri i mjekëve</a>
+			                    </li>
+			                    <li>
+			                        <a href="#services">Sëmundjet</a>
+			                    </li>
+			                    <li>
+			                        <a href="#contact">Vizitat</a>
+			                    </li>
+			                </ul>
+			            </div>
+			            <!-- /.navbar-collapse -->
+			        </div>
+			        <!-- /.container -->
+			    </nav>
+
+			    <!-- Full Width Image Header -->
+			    <header class="header-image">
+			        <div class="headline">
+			            <div class="container">
+			                <h1>Sëmundjet </h1>
+			                <h2>më të shpeshta në Kosovë</h2>
+			            </div>
+			        </div>
+			    </header>
+
+			    <!-- Page Content -->
+			    <div class="container">
+
+			        <hr class="featurette-divider">
+
+			        <!-- First Featurette -->
+			        <div class="featurette" id="about">
+			            <img class="featurette-image img-circle img-responsive pull-right" src="images/no_docs.jpg">
+			            <h2 class="featurette-heading">Numri i përgjithshëm i
+			                <span class="text-muted">mjekëve në Kosovë</span>
+			            </h2>
+									<ul>
+										<li>
+												<a class="lead" >Artane</a>
+										</li>
+										<li>
+												<a class="lead" >Dardane</a>
+										</li>
+										<li>
+												<a class="lead" >Decan</a>
+										</li>
+									</ul>
+			        </div>
+
+			        <hr class="featurette-divider">
+
+			        <!-- Second Featurette -->
+			        <div class="featurette" id="services">
+			            <img class="featurette-image img-circle img-responsive pull-left" src="images/diseases.jpg">
+			            <h2 class="featurette-heading">Sëmundshmëria sipas viteve
+			                <span class="text-muted">nëpër komunat e Kosovës.</span>
+			            </h2>
+			            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+			        </div>
+
+			        <hr class="featurette-divider">
+
+			        <!-- Third Featurette -->
+			        <div class="featurette" id="contact">
+			            <img class="featurette-image img-circle img-responsive pull-right" src="images/people.jpg">
+			            <h2 class="featurette-heading">Vizitat në KPSH sipas
+			                <span class="text-muted">komunave të Kosovës</span>
+			            </h2>
+			            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+			        </div>
+
+			        <hr class="featurette-divider">
+
+			        <!-- Footer -->
+			        <footer>
+			            <div class="row">
+			                <div class="col-lg-12">
+			                    <p>Copyright &copy; Datathon 2016</p>
+			                </div>
+			            </div>
+			        </footer>
+
+			    </div>
+			    <!-- /.container -->
+
+					<!-- jQuery -->
+			    <script src="javascripts/jquery.js"></script>
+					<!-- Bootstrap Core JavaScript -->
+			    <script src="javascripts/bootstrap.min.js"></script>
+					<!-- Create a graph function -->
+					<script src="javascripts/create-graph.js"></script>
   	</body>
 </html>
